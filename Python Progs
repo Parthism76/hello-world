@@ -1,0 +1,16 @@
+for i in range(0,4):
+    print("Hello World")
+-------------------------------------
+def duplicate(x):
+    y=len(x)
+    repeat=[]
+    for i in range(y):
+         k=i+1
+         for j in range(k,y):
+             if x[i]==x[j] and x[i] not in repeat:
+                 repeat.append(x[i])
+    
+    return repeat
+lis=[10,20,30,40,40,30,50,10]
+print(duplicate(lis))
+-------------------------------------
